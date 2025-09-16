@@ -1,4 +1,4 @@
-1. #### Why network?
+#### Why network?
 
 ---
 
@@ -46,7 +46,7 @@ They provide security features such as firewalls and manage IP address allocatio
 
 
 
-Without routers, the internet as a scalable and resilient global network would not exist. 
+Without routers, the internet as a scalable and resilient global network would not exist.
 
 
 
@@ -64,13 +64,29 @@ As we dive deeper into networking, it’s important to understand the fundamenta
 
 
 
-The OSI Model is a conceptual framework used to understand and design how different networking protocols interact to enable communication between devices. It divides network communication into seven distinct layers, each responsible for specific tasks.
+the OSI model is a theoretical framework that defines how network communication should occur across seven distinct layers. It’s widely used for educational and conceptual purposes, helping professionals understand and troubleshoot networking systems.
+
+
+
+*Need*:
+
+---
+
+to put it simply in my words, assume we run a package delivering services... now there is a set of rules our customers needs to follow, Think of networking like running a parcel delivery service. To guarantee safe delivery, customers must follow a set of standardized rules—like proper packaging and addressing. Reference models in networking serve the same purpose: they define clear procedures so data can travel securely and efficiently across devices
 
 
 
 Brief Description of Each Layer
 
-###### 1\. Physical Layer:
+
+
+***The Bottom Layers:-***
+
+
+
+1. ###### Physical Layer:
+
+---
 
 Transmits raw binary data (bits) over physical media. Deals with cables, switches, electrical signals, radio waves, and hardware specifications.
 
@@ -94,7 +110,13 @@ Ensures complete data transfer with mechanisms for error checking, flow control,
 
 
 
-###### 5\. Session Layer:
+***The Upper Layers:-***
+
+
+
+5. ###### Session Layer:
+
+---
 
 Manages sessions or connections between two computers—establishes, maintains, and terminates communication.
 
@@ -116,7 +138,11 @@ Each layer adds or processes specific information — such as formatting, error 
 
 
 
-***Mnemonics for OSI Layers- Please Do Not Throw Sausage Pizza Away***
+***Mnemonics for OSI Layers- "Please Do Not Throw Sausage Pizza Away"* or (receiver's POV)**
+
+**<i>                          "All People Seem To Need Data Processing"   </i>(sender's POV)**
+
+
 
 
 
@@ -152,34 +178,11 @@ The information is ultimately sent as electrical signals through your Ethernet c
 
 
 
+the other recognized model is of "***DoD (Department of Defense)" which is the foundation of the internet we know it as TCP/IP.***
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### What is TCP/IP protocol suite?
 
