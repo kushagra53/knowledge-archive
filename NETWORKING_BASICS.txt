@@ -186,3 +186,59 @@ the other recognized model is of "***DoD (Department of Defense)" which is the f
 
 #### What is TCP/IP protocol suite?
 
+The TCP/IP protocol suite is a set of communication protocols that define how data is packetized, addressed, transmitted, routed, and received across interconnected networks like the Internet. Unlike the OSI model, which is mainly conceptual, TCP/IP is an implementation-oriented model that directly reflects how real networks (including the modern Internet) operate.​
+
+TCP/IP is often called the Internet Protocol Suite because its core protocols—TCP (Transmission Control Protocol), UDP (User Datagram Protocol), and IP (Internet Protocol)—form the backbone of internet communication. Early versions were known as the DoD Internet Architecture Model because DARPA (under the U.S. Department of Defense) funded its development.​
+
+Need for TCP/IP (in my words)
+If the OSI model is like a detailed textbook for how networking should work, the TCP/IP suite is like the actual rulebook used on the playing field. TCP/IP provides a practical, standardized way for different operating systems, hardware, and applications to communicate reliably over local networks and the global internet.​
+
+It defines end-to-end communication rules: how data is broken into packets, how each packet is given an IP address, how routers forward those packets, and how the destination reassembles them correctly (or detects loss) using protocols like TCP. Because everyone follows the same TCP/IP rules, devices from anywhere in the world can talk to each other, regardless of vendor or platform.​
+
+Layers of the TCP/IP Model
+Unlike the 7-layer OSI model, the classic TCP/IP model is usually shown with 4 layers (sometimes expanded to 5); each layer groups related functions and protocols.​
+
+1. Network Access (or Link) Layer
+
+Combines the functions of the OSI Physical and Data Link layers.​
+
+Handles how data is physically sent over a medium (Ethernet, Wi‑Fi, etc.), framing, MAC addressing, and local error detection.​
+
+Example technologies/protocols: Ethernet, Wi‑Fi (IEEE 802.11), PPP, ARP at the edge between link and internet layer.​
+
+2. Internet Layer
+
+Corresponds roughly to the OSI Network layer.​
+
+Responsible for logical addressing (IP addresses), routing, and forwarding packets across multiple networks.​
+
+Core protocols: IP (IPv4/IPv6), ICMP (for error and diagnostic messages), ARP/ND (address resolution), IGMP for multicast.​
+
+3. Transport Layer (Host-to-Host Layer)
+
+Aligns with the OSI Transport layer.​
+
+Provides end-to-end communication between applications on different hosts, including segmentation, reliability, flow control, and sometimes multiplexing via ports.​
+
+Main protocols:
+
+TCP: connection-oriented, reliable, ordered delivery, congestion and flow control. Used by web, email, file transfer, etc.​
+
+UDP: connectionless, faster, no built-in reliability, used where speed and low overhead matter (DNS, streaming, VoIP, some games).​
+
+4. Application Layer
+
+Combines OSI’s Application, Presentation, and Session layers into one.​
+
+Provides network services directly to user applications: defines message formats, commands, and semantics for services like web, email, file transfer, name resolution, etc.​
+
+Example protocols: HTTP/HTTPS, FTP, SMTP, POP3, IMAP, DNS, DHCP, SSH, Telnet, etc.​
+
+(If you want, you can also note that some textbooks show a 5-layer version by splitting Network Access into Data Link + Physical, to better match OSI for teaching.)​
+
+Relation Between OSI and TCP/IP
+OSI has 7 layers; TCP/IP typically has 4 (or 5), with the top three OSI layers merged into the single Application layer and the bottom two merged into the Network Access layer.​
+
+OSI is protocol-agnostic and mainly used as a reference for learning and design, while TCP/IP is built around real, standardized protocols that power the internet.​
+
+In practice, engineers often use both: OSI for conceptual troubleshooting (“which layer is broken?”) and TCP/IP for actual protocol behavior (IP, TCP, UDP, HTTP, etc.)
